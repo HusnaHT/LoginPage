@@ -2,24 +2,33 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  function handleclick(){
+    alert(1)
+  }
+    return (
+      <div className="text-center m-5-auto">
+         
+          <form action="/home">
+          <h2>ACCOUNT</h2>
+              <p>
+                  <label>Email</label><br/>
+                  <input type="text" name="email" required />
+              </p>
+              <p>
+                  <label>Password</label>
+                  <br/>
+                  <input type="password" name="password" required />
+              </p>
+              <p>
+                  <button id="sub_btn" type="submit">Login</button>
+              </p>
+              <href to="/forget-password"><label className="right-label">Forget password?</label></href>
+          </form>
+       
+      </div>
+  )
+    
+
+};
 
 export default App;
